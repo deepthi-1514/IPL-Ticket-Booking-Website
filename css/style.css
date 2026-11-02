@@ -1,0 +1,239 @@
+/* Website Theme Variables */
+
+:root {
+    --primary-color: #101b3f;
+    --accent-color: #f5a623;
+    --background-color: #f4f6fa;
+    --text-color: #222222;
+}
+
+/* General Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding-top: 110px;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: white;
+    margin: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+
+main {
+    background: linear-gradient(135deg, #101b3f, #304f91);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+main h1 {
+    font-size: 35px;
+}
+
+main a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Main Content Sections */
+
+article {
+    background-color: white;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #172b65;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #172b65;
+    color: white;
+}
+
+/* Forms */
+
+input, select {
+    padding: 10px;
+    margin: 8px 0;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* IPL Image Gallery */
+
+#gallery {
+    text-align: center;
+}
+
+#gallery img {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Booking Form and Summary */
+
+#booking {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#booking h2 {
+    width: 100%;
+}
+
+#booking form,
+#booking aside {
+    flex: 1 1 280px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+#booking aside {
+    background-color: #eef2ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Information Cards */
+
+aside {
+    background-color: #eef2ff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+/* Buttons */
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding-top: 230px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+
+    main h1 {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 40px 10px;
+    }
+
+    article {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    input, select {
+        width: 95%;
+    }
+
+    #gallery img {
+        width: 90%;
+        height: 200px;
+    }
+
+}
